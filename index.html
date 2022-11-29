@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Home Assignment</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body background="./assets/img/medieval-vintage-background-lighting-arches-33977247.jpg">
+    <!-- Menu Text -->
+    <div id="menu-text-container">
+        <h1 class="title">Light Bulb Game</h1><br>
+
+        <p class="game-desc">Once upon a time, King Unnamed of Nowhereland was both smiling and crying at the same time.
+            He was smiling because his enormous brand-new palace with many spacious rooms and corridors has just been
+            finished. He is also crying as these rooms need to be illuminated and kept warm, but the ongoing increase of
+            utility costs affect him as well. So now it's time to think about the placement of the palace's light bulbs.
+            We need to place them so that everything is properly lit, but we cannot install any unnecessary bulbs.</p>
+        <br>
+
+        <h2>Game instructions</h2>
+        <ol>
+            <li>The king's palace has rooms with square shaped floors that consist of black and white tiles only.
+            </li>
+            <li>The goal of the game is to place the light bulbs so that all the white tiles are illuminated. </li>
+            <li>Light bulbs can only be placed above white tiles. </li>
+            <li>The light from the light bulbs does not spread diagonally, only straight along the given row and
+                column. </li>
+            <li>The black tiles have objects placed on them, which block the propagation of light. </li>
+            <li>Black cells can optionally contain an integer from 0 to 4. This indicates how many adjacent (bottom,
+                top, right, left) cells contain light bulbs. If there is such a number, the puzzle must be solved
+                accordingly!</li>
+            <li>Two light bulbs can NEVER illuminate each other!</li>
+            <li>The game is played by one player until he solves the puzzle, so there is no need to manage multiple
+                players at the same time or divide into rounds.</li>
+        </ol>
+
+        <br>
+        <h2> Choose a map to start the game</h2>
+    </div>
+
+    <div id="controls">
+        Name: <input type="text" id="name-input"><br>
+        <form action="submit" id="controls-form">
+            Map Difficulty: <input type="number" id="map-input"> (Input a number)
+        </form>
+        <select id="maps">
+            <option value="easy">Easy</option>
+            <option value="advanced">Advanced</option>
+            <option value="extreme">Extreme</option>
+            <option value="custom">Custom</option>
+        </select>
+        <button>Start Game</button>
+    </div>
+    <span id="display-name"></span>
+    <span id="timer"></span>
+    <button id="restart-button">Restart</button>
+    <table></table>
+    <br>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
